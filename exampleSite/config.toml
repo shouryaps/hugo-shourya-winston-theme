@@ -17,6 +17,8 @@ paginate = 5
   
   introMD= "**Shourya's** Home on Internet"
 
+  showPostsOnHomepage = true
+  maxHomepagePosts = 2
   showAuthorOnPosts = true
 
   addFrame = true

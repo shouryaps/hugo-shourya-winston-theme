@@ -1,0 +1,15 @@
+{{ if .Site.Params.showPostsOnHomepage }}
+
+{{ $recentPosts := ( where .Site.RegularPages "Type" "posts" | first .Site.Params.maxHomepagePosts ) }}
+
+{{ if gt (len $recentPosts) 0 }}
+<div class="recent">
+    <h1 class="heading">Recent posts</h1>
+    {{ range $recentPosts }}
+      {{ .Render "summary" }}
+    {{ end }}
+    <h3 class="see-posts"><a href="/posts/">See All Posts&nbsp;&#10230;</a></h3>
+</div>
+{{ end }}
+
+{{ end }}
