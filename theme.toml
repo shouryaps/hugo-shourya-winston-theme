@@ -1,14 +1,18 @@
-name = "Hugo Winston"
+name = "Hugo Shourya Winston"
 license = "MIT"
-licenselink = "https://github.com/zerostaticthemes/hugo-winston/blob/master/LICENSE"
-description = "Hugo Winston is a bold minimal blogging theme"
+licenselink = "https://github.com/shouryaps/hugo-shourya-winston-theme/blob/master/LICENSE"
+description = " Blog theme powering shouryaps.com"
 
-homepage = "https://github.com/zerostaticthemes/hugo-winston-theme"
-demosite = "https://hugo-winston.netlify.app"
+homepage = "https://github.com/shouryaps/hugo-shourya-winston-theme"
+demosite = "https://shouryaps.com"
 
-tags = ["blog", "minimal", "clean", "Google analytics", "bootstrap", "zerostatic"]
+tags = ["blog"]
 features = ["blog"]
 
 [author]
+  name = "Shourya Pratap Singh"
+  homepage = "https://shouryaps.com"
+
+[original]
   name = "Robert Austin"
   homepage = "https://www.zerostatic.io"
