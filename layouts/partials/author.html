@@ -1,6 +1,18 @@
 <div class="author">
-  <img width="30" class="author-image" src="{{ .Site.Data.author.image | relURL }}" />
-  <span class="author-name">{{ .Site.Data.author.name }}</span>
-  <span class="author-divider"></span>
-  <span class="author-date">{{ dateFormat "January 2, 2006" .Date }}</span>
+  <span class="details">
+    <img width="30" class="author-image" src="{{ .Site.Data.author.image | relURL }}" />
+    <span class="author-name">{{ .Site.Data.author.name }}</span>
+    <span class="author-divider">&#183;</span>
+    <span class="author-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+    <span class="author-divider">&#183;</span>
+    <span class="author-date">{{ math.Round (div (countwords .Content) 220.0) }} min read</span>
+  </span>
+  <span class="sharing">
+    <a href="http://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via={{with .Site.Params.twitter_username }}{{ . }}{{ end }}" title="Share on Twitter" aria-label="Share on Twitter">
+      <img src="/images/social/twitter.svg" />
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" title="Share on LinkedIn" aria-label="Share on LinkedIn">
+      <img src="/images/social/linkedin.svg" />
+    </a>
+  </span>
 </div>
