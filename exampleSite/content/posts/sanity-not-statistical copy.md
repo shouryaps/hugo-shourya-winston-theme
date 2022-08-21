@@ -1,6 +1,6 @@
 ---
 title: Sanity is not statistical
-date: 2022-08-10
+date: 2022-08-02
 description: 'Once again he glanced at his rival in the opposite cubicle. Something seemed to tell him with certainty that Tillotson was busy on the same job as himself. There was no way of knowing whose version would finally be adopted, but he felt a profound conviction that it would be his own'
 image: images/cctv2.jpeg
 tags:
@@ -19,7 +19,7 @@ evocet pectus, _nube_. In templo taedia [socerumque moenibus](#dat) alter sic
 regina pulchra rexerat. Corbe est et, **invectae** pariter ignara quod senes:
 sectus his tamen. Hora graves iam prospiciunt, subito spargit germanam _utve_,
 inmeritas frontemque tempora. Frustra stratosque possim trepidare squamis, os,
-tum ipse prodesse acuta Phobetora e viscera, munera!
+tum ipse prodesse acuta Phobetora[^1] e viscera[^bignote], munera!
 
 - Peraravit Themis deserat et stetit taedae quodcumque
 - Grave invitae usque et terraque
@@ -50,3 +50,13 @@ rupit, inque illa [passibus grave coronantur](#horto-in-te) nectare. Molli iam
 aer suus prosternite, vultus per valetque aut iactas rumpunt, et ubi donec.
 Pariter ab ille, nec **per aera thalamis** Cumaea, modo fugit ore placuerunt
 habebit.
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.

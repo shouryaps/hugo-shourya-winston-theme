@@ -5,7 +5,6 @@
     line-height: 56px;
     margin-top: 0;
     @include breakpoint('small') {
-      // width: 80%;
       font-size: 66px;
       line-height: 94px;
     }
@@ -29,12 +28,6 @@
   }
   img {
     max-width: 100%;
-  }
-
-  .hello {
-    p {
-      margin-bottom: 0px;
-    }
   }
   
 }
