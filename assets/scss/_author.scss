@@ -20,13 +20,11 @@
 
   .author-name {
     display: inline-block;
-    vertical-align: middle;
     font-weight: bold;
     margin-left: 5px;
   }
   .author-date {
     display: inline-block;
-    vertical-align: middle;
   }
   .author-divider {
     padding-left: 5px;
@@ -58,6 +56,7 @@
 
 .author-large {
   font-size: 48px;
+  line-height: 56px;
   img {
     width: 48px;
     height: 48px;
