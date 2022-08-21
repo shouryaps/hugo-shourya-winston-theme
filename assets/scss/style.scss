@@ -9,7 +9,7 @@
   --text-color: #292929;
   --font-default-size: 20px;
   --font-default-line-height: 32px;
-  --text-color: #4e5157;
+  --tag-color: #666666;
 }
 
 $breakpoints: (
@@ -26,6 +26,7 @@ $breakpoints: (
 @import 'intro';
 @import 'summary';
 @import 'author';
+@import 'tags';
 @import 'pagination';
 @import 'main-menu';
 @import 'main-menu-mobile';

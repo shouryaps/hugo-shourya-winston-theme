@@ -1,0 +1,30 @@
+{{ define "body_classes" }}page-default-list{{ end }}
+
+{{ define "main" }}
+
+  {{ $paginator := .Paginate (where .Pages "Type" "posts") }}
+
+  <div class="intro page-heading">
+    <h1> {{ if gt (len $paginator.Pages) 0 }} <a href="{{ "/tags/" | relLangURL }}">Tags</a> > {{ end }}{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
+    {{ if .Params.description }}<p>{{ .Params.description }}</p>{{ end }}
+  </div>
+
+  {{ .Content }}
+
+  {{ if eq (len $paginator.Pages) 0 }}
+
+    <p class="tags">
+      {{ range .Site.Taxonomies.tags }}
+      <a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a> 
+      {{ end }}
+    </p>
+    
+  {{ else }}
+    {{ range $paginator.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+  {{ end }}
+
+    
+{{ end }}

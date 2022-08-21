@@ -1,0 +1,19 @@
+.tags {
+    a {
+        font-size: 13px;
+        padding: 2px 8px;
+        text-decoration: none;
+        color: var(--tag-color);
+        border: 3px solid var(--tag-color);
+        box-shadow: 2px 2px var(--tag-color);
+        &:hover {
+            text-decoration: none;
+            color: var(--text-color);
+            border: 3px solid var(--text-color);
+            box-shadow: 2px 2px var(--text-color);
+        }
+        &:not(:last-of-type) {
+            margin-right: 10px;
+        }
+    }
+}
