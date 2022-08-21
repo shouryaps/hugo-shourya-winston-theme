@@ -1,5 +1,5 @@
 ---
-title: Home on Internet
+title: Shourya's Home on Internet
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 

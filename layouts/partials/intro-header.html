@@ -1,0 +1,4 @@
+<div class="intro-header page-heading">
+    <img width="50" src="{{ .Site.Data.author.image | relURL }}" alt="" />
+    <span class="intro-text">{{.Site.Params.introMD | markdownify}}</span>{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}
+</div>

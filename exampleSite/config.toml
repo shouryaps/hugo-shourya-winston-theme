@@ -1,6 +1,6 @@
 baseURL = "https://shouryaps.com/"
 languageCode = "en-us"
-title = "Shourya Pratap Singh"
+title = "@shouryaps"
 themesDir = "../.."
 theme = "hugo-shourya-winston-theme"
 
@@ -14,8 +14,8 @@ paginate = 5
 [params]
   twitterHandle = "@shouryaps"
   twitterUsername = "shouryaps"
-
-  logoTitle = "@shouryaps"
+  
+  introMD= "**Shourya's** Home on Internet"
 
   showAuthorOnPosts = true
 
