@@ -1,8 +1,10 @@
 <div class="author">
   <span class="details">
+    {{ if .Site.Params.showAuthorNameOnPosts }}
     <img width="30" class="author-image" src="{{ .Site.Data.author.image | relURL }}" />
     <span class="author-name">{{ .Site.Data.author.name }}</span>
     <span class="author-divider">&#183;</span>
+    {{ end }}
     <span class="author-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
     <span class="author-divider">&#183;</span>
     <span class="author-date">{{ math.Round (div (countwords .Content) 220.0) }} min read</span>

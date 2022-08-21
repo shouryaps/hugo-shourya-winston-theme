@@ -19,7 +19,7 @@ paginate = 5
 
   showPostsOnHomepage = true
   maxHomepagePosts = 2
-  showAuthorOnPosts = true
+  showAuthorNameOnPosts = false
 
   addFrame = true
   addDot = true
