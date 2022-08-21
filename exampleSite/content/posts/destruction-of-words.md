@@ -1,8 +1,13 @@
 ---
 title: It's a beautiful thing, the destruction of words
-date: 2018-10-30
+date: 2022-08-21
 description: 'As soon as Winston had dealt with each of the messages, he clipped his speakwritten corrections to the appropriate copy of the Times and pushed them into the pneumatic tube. '
 image: images/cctv.jpeg
+tags:
+- Development
+- Go
+- fast
+- Blogging
 ---
 
 ## He moved over to the window
@@ -45,7 +50,19 @@ usque fixurus Echione, ut. Inter genetrix tergo; semina praestant at **eadem**,
 quem bis cuius crede sparsas diversa diva. A inquit cingebant. Verso rostro,
 venit huic nobis Phoebe mihi aurea sacrum mutare dixit; iam?
 
-```javascript
+```javascript {hl_lines=[3,"5-7"],linenostart=1}
+$(window).scroll(function() {
+  // this will work when your window scrolled.
+  var scroll = $(window).scrollTop(); //getting the scrolling height of window
+  if (scroll > 100) {
+    $('.header').addClass('header-scrolled');
+  } else {
+    $('.header').removeClass('header-scrolled');
+  }
+});
+```
+
+```javascript {linenos=inline,hl_lines=[3,"5-7"],linenostart=1}
 $(window).scroll(function() {
   // this will work when your window scrolled.
   var scroll = $(window).scrollTop(); //getting the scrolling height of window
