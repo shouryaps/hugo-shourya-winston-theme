@@ -17,8 +17,8 @@ h3 {
 p {
   color: var(--text-color);
   font-family: var(--font-family-paragraph);
-  font-size: 18px;
-  line-height: 24px;
+  font-size: var(--font-default-size);
+  line-height: var(--font-default-line-height);
 }
 
 ol,
@@ -32,17 +32,17 @@ ul {
 }
 
 .content {
-  font-size: 18px;
+  font-size: var(--font-default-size);
   p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: var(--font-default-size);
+    line-height: var(--font-default-line-height);
     margin: 0;
     padding: 0;
     margin-bottom: 20px;
   }
   h1 {
     font-size: 40px;
-    line-height: 1.6;
+    line-height: var(--font-default-line-height);
     font-weight: bold;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -78,8 +78,8 @@ ul {
     margin-bottom: 20px;
     list-style: disc;
     li {
-      font-size: 18px;
-      line-height: 20px;
+      font-size: var(--font-default-size);
+      line-height: var(--font-default-line-height);
       margin-bottom: 10px;
       margin-left: 0;
       @include breakpoint('small') {
@@ -92,8 +92,6 @@ ul {
   }
   a {
     text-decoration: underline;
-    &:hover {
-    }
   }
   blockquote {
     border-left: 5px solid var(--highlight-color);
@@ -101,7 +99,7 @@ ul {
     padding: 20px;
   }
   blockquote p {
-    font-size: 20px;
+    font-size: var(--font-default-size);
     display: inline;
     color: var(--color-base-text);
   }
@@ -134,8 +132,8 @@ ul {
   .highlight {
     pre {
       border-radius: 3px;
-      font-size: 14px;
-      line-height: 18px;
+      font-size: var(--font-default-size);
+      line-height: var(--font-default-line-height);
       padding: 30px;
       overflow: auto;
       font-family: var(--font-family-monospace);
