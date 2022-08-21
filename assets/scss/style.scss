@@ -38,6 +38,8 @@ html, body {
 body {
   background: var(--base-color);
   font-family: var(--font-family-paragraph);
+  font-size: var(--font-default-size);
+  line-height: var(--font-default-line-height);
   color: var(--text-color);
   margin: 0;
   padding: 20px;
