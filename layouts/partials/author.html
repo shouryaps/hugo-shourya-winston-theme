@@ -7,6 +7,7 @@
     <span class="author-divider">&#183;</span>
     <span class="author-date">{{ math.Round (div (countwords .Content) 220.0) }} min read</span>
   </span>
+  {{ if eq (.Scratch.Get "showShare") "yes" }}
   <span class="sharing">
     <a href="http://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via={{with .Site.Params.twitterUsername }}{{ . }}{{ end }}" title="Share on Twitter" aria-label="Share on Twitter">
       <img src="/images/social/twitter.svg" />
@@ -15,4 +16,5 @@
       <img src="/images/social/linkedin.svg" />
     </a>
   </span>
+  {{ end }}
 </div>

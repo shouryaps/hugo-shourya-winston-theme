@@ -4,6 +4,7 @@
 {{ define "main" }}
   <div class="blog">
     {{ if .Site.Params.showAuthorOnPosts }}
+      {{ .Scratch.Set "showShare" "yes"  }}
       {{ partial "author.html" . }}
     {{ end }}
     <div class="intro">
