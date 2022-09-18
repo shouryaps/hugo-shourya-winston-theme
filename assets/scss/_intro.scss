@@ -43,20 +43,9 @@
 .intro-header {
   font-size: 48px;
   line-height: 56px;
-  img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    vertical-align: middle;
-    border: 2px solid var(--heading-color);
-  }
   @include breakpoint('small') {
     font-size: 66px;
     line-height: 94px;
-    img {
-      width: 66px;
-      height: 66px;
-    }
   }
   margin-bottom: 30px;
   .intro-text {

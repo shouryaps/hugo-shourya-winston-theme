@@ -13,7 +13,13 @@ paginate = 5
 
 [params]
   twitterHandle = "@shouryaps"
+
   twitterUsername = "shouryaps"
+  linkedinUsername = "shouryaps"
+  githubUsername = "shouryaps"
+  email = "mail@shouryaps.com"
+
+  ccLicenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
   
   introMD= "**Shourya's** Home on Internet"
 

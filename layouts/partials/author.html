@@ -11,7 +11,7 @@
   </span>
   {{ if eq (.Scratch.Get "showShare") "yes" }}
   <span class="sharing">
-    <a href="http://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via={{with .Site.Params.twitterUsername }}{{ . }}{{ end }}" title="Share on Twitter" aria-label="Share on Twitter">
+    <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via={{with .Site.Params.twitterUsername }}{{ . }}{{ end }}" title="Share on Twitter" aria-label="Share on Twitter">
       <img src="/images/social/twitter.svg" />
     </a>
     <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" title="Share on LinkedIn" aria-label="Share on LinkedIn">

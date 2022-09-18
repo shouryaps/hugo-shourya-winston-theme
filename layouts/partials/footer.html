@@ -1,8 +1,9 @@
 <div class="footer">
-  <div class="footer-license">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0;width:80px;height:15px;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-    <span class="footer-author">{{ .Site.Data.author.name }}</span>
-    <br />
-    Content on this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
-  </div>
+ <div class="footer-menu">
+    {{ if .Site.Params.ccLicenseURL }}<a rel="license" href="{{.Site.Params.ccLicenseURL}}"><img src="/images/cc.svg" /></a>{{ end }}
+    {{ if .Site.Params.twitterUsername }}<a href="https://twitter.com/{{.Site.Params.twitterUsername}}"><img src="/images/social/twitter.svg" /></a>{{ end }}
+    {{ if .Site.Params.email }}<a href="mailto:{{.Site.Params.email}}"><img src="/images/social/mail.svg" /></a>{{ end }}
+    {{ if .Site.Params.linkedinUsername }}<a href="https://linkedin.com/{{.Site.Params.linkedinUsername}}"><img src="/images/social/linkedin.svg" /></a>{{ end }}
+    {{ if .Site.Params.githubUsername }}<a href="https://github.com/{{.Site.Params.githubUsername}}"><img src="/images/social/github.svg" /></a>{{ end }}
+ </div>
 </div>
