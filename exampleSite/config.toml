@@ -7,30 +7,30 @@ theme = "hugo-shouryaps-blog-theme"
 paginate = 5
 
 [module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.55.0"
+[module.hugoVersion]
+extended = true
+min = "0.55.0"
 
 [params]
-  twitterHandle = "@shouryaps"
+twitterHandle = "@shouryaps"
 
-  twitterUsername = "shouryaps"
-  linkedinUsername = "shouryaps"
-  githubUsername = "shouryaps"
-  email = "mail@shouryaps.com"
+twitterUsername = "shouryaps"
+linkedinUsername = "shouryaps"
+githubUsername = "shouryaps"
+email = "mail@shouryaps.com"
 
-  ccLicenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-  
-  introMD= "**Shourya's** Home on Internet"
+ccLicenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 
-  showPostsOnHomepage = true
-  maxHomepagePosts = 2
-  showAuthorNameOnPosts = false
+introMD = "**Shourya's** Home on Internet"
 
-  addFrame = true
-  addDot = true
+showPostsOnHomepage = true
+maxHomepagePosts = 2
+showAuthorNameOnPosts = false
 
-  highlightColor = '#113CFC'
+addFrame = true
+addDot = true
+
+highlightColor = '#113CFC'
 
 [taxonomies]
-    tag = "tags"
+tag = "tags"

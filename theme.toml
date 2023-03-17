@@ -10,9 +10,9 @@ tags = ["blog"]
 features = ["blog"]
 
 [author]
-  name = "Shourya Pratap Singh"
-  homepage = "https://shouryaps.com"
+name = "Shourya Pratap Singh"
+homepage = "https://shouryaps.com"
 
 [original]
-  name = "Robert Austin"
-  homepage = "https://www.zerostatic.io"
+name = "Robert Austin"
+homepage = "https://www.zerostatic.io"
