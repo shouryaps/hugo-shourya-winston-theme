@@ -4,7 +4,7 @@
     font-size: 48px;
     line-height: 56px;
     margin-top: 0;
-    @include breakpoint('small') {
+    @include breakpoint("small") {
       font-size: 66px;
       line-height: 94px;
     }
@@ -15,14 +15,14 @@
   h2 {
     font-size: 50px;
     line-height: 56px;
-    @include breakpoint('small') {
+    @include breakpoint("small") {
       width: 80%;
     }
   }
   p {
     font-size: var(--font-default-size);
     line-height: var(--font-default-line-height);
-    @include breakpoint('small') {
+    @include breakpoint("small") {
       width: 80%;
     }
   }
@@ -44,7 +44,7 @@
 .intro-header {
   font-size: 48px;
   line-height: 56px;
-  @include breakpoint('small') {
+  @include breakpoint("small") {
     font-size: 66px;
     line-height: 94px;
   }

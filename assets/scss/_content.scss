@@ -59,7 +59,7 @@ ul {
     &:first-of-type {
       margin-top: 0;
     }
-    @include breakpoint('small') {
+    @include breakpoint("small") {
       font-size: 30px;
       line-height: 1.4;
     }
@@ -93,11 +93,11 @@ ul {
       line-height: var(--font-default-line-height);
       margin-bottom: 10px;
       margin-left: 0;
-      @include breakpoint('small') {
+      @include breakpoint("small") {
         margin-left: 20px;
       }
     }
-    @include breakpoint('small') {
+    @include breakpoint("small") {
       margin-left: 20px;
     }
   }

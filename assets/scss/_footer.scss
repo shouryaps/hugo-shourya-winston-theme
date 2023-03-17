@@ -31,7 +31,7 @@
     .mobile-license {
         display: inline-block;
     }
-    @include breakpoint('small') {
+    @include breakpoint("small") {
         .footer-site {
             display: inline-block;
         }
