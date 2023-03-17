@@ -1,9 +1,9 @@
 name = "Hugo Shourya Winston"
 license = "MIT"
-licenselink = "https://github.com/shouryaps/hugo-shourya-winston-theme/blob/master/LICENSE"
+licenselink = "https://github.com/shouryaps/hugo-shouryaps-blog-theme/blob/master/LICENSE"
 description = " Blog theme powering shouryaps.com"
 
-homepage = "https://github.com/shouryaps/hugo-shourya-winston-theme"
+homepage = "https://github.com/shouryaps/hugo-shouryaps-blog-theme"
 demosite = "https://shouryaps.com"
 
 tags = ["blog"]

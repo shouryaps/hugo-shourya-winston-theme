@@ -2,7 +2,7 @@ baseURL = "https://shouryaps.com/"
 languageCode = "en-us"
 title = "@shouryaps"
 themesDir = "../.."
-theme = "hugo-shourya-winston-theme"
+theme = "hugo-shouryaps-blog-theme"
 
 paginate = 5
 
