@@ -1,7 +1,7 @@
 :root {
   --font-family-heading: 'PT Sans', sans-serif;
   --font-family-paragraph: 'PT Sans', sans-serif;
-  --font-family-monospace: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  --font-family-monospace: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --base-color: #ffffff;
   --base-offset-color: #eaeaea;
   --highlight-color: {{ .Site.Params.highlightColor | default "#7b16ff" }};
