@@ -4,7 +4,7 @@
   --font-family-monospace: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   --base-color: #ffffff;
   --base-offset-color: #eaeaea;
-  --highlight-color: {{ .Site.Params.highlightColor | default "#7b16ff" }};
+  --highlight-color: {{ .Site.Params.highlightColor | default "#113CFC" }};
   --heading-color: #1c1b1d;
   --text-color: #292929;
   --font-default-size: 20px;

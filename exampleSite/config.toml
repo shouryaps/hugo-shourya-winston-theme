@@ -30,7 +30,7 @@ paginate = 5
   addFrame = true
   addDot = true
 
-  highlightColor = '#7b16ff'
+  highlightColor = '#113CFC'
 
 [taxonomies]
     tag = "tags"
