@@ -58,7 +58,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   padding: var(--padding-small-screen);
-  @include breakpoint('small') { // min width check
+  @include breakpoint('small') { // if this and above
     padding: var(--padding-screen);
   }
 }
@@ -67,7 +67,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding-bottom: var(--padding-small-screen);
-  @include breakpoint('small') { // min width check
+  @include breakpoint('small') { // if this and above
     padding-bottom: 0;
   }
 }
