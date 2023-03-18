@@ -3,20 +3,20 @@
 }
 
 .sun-and-moon > :is(.moon, .sun) {
-	fill: var(--icon-fill);
+	fill: var(--tag-color);
 }
 
 .theme-toggle:is(:hover, :focus-visible) > .sun-and-moon > :is(.moon, .sun) {
-	fill: var(--icon-fill-hover);
+	fill: var(--text-color);
 }
 
 .sun-and-moon > .sun-beams {
-	stroke: var(--icon-fill);
+	stroke: var(--tag-color);
 	stroke-width: 2px;
 }
 
 .theme-toggle:is(:hover, :focus-visible) .sun-and-moon > .sun-beams {
-	stroke: var(--icon-fill-hover);
+	stroke: var(--text-color);
 }
 
 [data-theme="dark"] .sun-and-moon > .sun {
@@ -46,14 +46,11 @@
 }
 
 .theme-toggle {
-	--size: var(--font-default-size);
-	--icon-fill: hsl(210 10% 30%);
-	--icon-fill-hover: hsl(210 10% 15%);
 	background: none;
 	border: none;
 	padding: 0;
-	inline-size: var(--size);
-	block-size: var(--size);
+	inline-size: var(--font-default-size);
+	block-size: var(--font-default-size);
 	aspect-ratio: 1;
 	border-radius: 50%;
 	cursor: pointer;
@@ -66,15 +63,4 @@
 	inline-size: 100%;
 	block-size: 100%;
 	stroke-linecap: round;
-}
-
-[data-theme="dark"] .theme-toggle {
-	--icon-fill: hsl(210 10% 70%);
-	--icon-fill-hover: hsl(210 15% 90%);
-}
-
-@media (hover: none) {
-	.theme-toggle {
-		--size: 48px;
-	}
 }
