@@ -4,7 +4,7 @@
 <div class="intro">
   <h1 class="page-heading">{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
   {{ if .Params.image }}
-  <img src="{{ .Params.image | relURL }}" />
+  <div class="page-image"><img src="{{ .Params.image | relURL }}" /></div>
   {{ end }}
 </div>
 
