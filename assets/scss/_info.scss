@@ -1,4 +1,4 @@
-.author {
+.info {
   font-size: var(--font-default-size);
   line-height: var(--font-default-line-height);
   margin-top: 30px;
@@ -22,35 +22,9 @@
     vertical-align: middle;
     border: 2px solid var(--heading-color);
   }
-
-  .author-name {
-    font-weight: bold;
-    margin-left: 5px;
-  }
-  .author-divider {
+  
+  .divider {
     padding-left: 5px;
     padding-right: 5px;
-  }
-
-  .sharing {
-    img {
-      border: none;
-      border-radius: 0;
-      opacity: 0.7;
-      width: 20px;
-      height: 20px;
-    }
-    a {
-      text-decoration: none;
-      &:hover {
-        text-decoration: none;
-        img {
-          opacity: 1;
-        }
-      }
-    }
-    a:not(:last-of-type) {
-      margin-right: 0.5rem;
-    }
   }
 }

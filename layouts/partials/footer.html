@@ -1,14 +1,18 @@
 <div class="footer">
-   <div class="footer-site">
-      <span class="footer-license">{{ if .Site.Params.ccLicenseURL }}<a rel="license" href="{{.Site.Params.ccLicenseURL}}"><img src="/images/cc.svg" /></a>{{ end }}</span>
-      <span class="footer-name">{{ .Site.Data.author.name }}</span>
+   <div class="footer-menu">
+      <a href="{{ .Site.BaseURL }}">Home</a>&nbsp;/&nbsp;
+      {{ range .Site.Menus.main }}
+      <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>&nbsp;/&nbsp;
+      {{ end }}
+      {{ if .Site.Params.twitterUsername }}
+      <a href="https://twitter.com/{{.Site.Params.twitterUsername}}">Twitter</a>&nbsp;/&nbsp;
+      {{ end }}
+      {{ if .Site.Params.githubUsername }}
+      <a href="https://github.com/{{.Site.Params.githubUsername}}">GitHub</a>&nbsp;/&nbsp;
+      {{ end }}
+      {{ if .Site.Params.linkedinUsername }}
+      <a href="https://linkedin.com/in/{{.Site.Params.linkedinUsername}}">LinkedIn</a>&nbsp;/&nbsp;
+      {{ end }}
+      <a href="{{ .Site.BaseURL }}/index.xml">RSS</a>
    </div>
- <div class="footer-menu">
-    {{ if .Site.Params.ccLicenseURL }}<a rel="license" class="mobile-license" href="{{.Site.Params.ccLicenseURL}}"><img src="/images/cc.svg" /></a>{{ end }}
-    {{ if .Site.Params.twitterUsername }}<a href="https://twitter.com/{{.Site.Params.twitterUsername}}"><img src="/images/social/twitter.svg" /></a>{{ end }}
-    {{ if .Site.Params.githubUsername }}<a href="https://github.com/{{.Site.Params.githubUsername}}"><img src="/images/social/github.svg" /></a>{{ end }}
-    {{ if .Site.Params.gitlabUsername }}<a href="https://gitlab.com/{{.Site.Params.gitlabUsername}}"><img src="/images/social/gitlab.svg" /></a>{{ end }}
-    {{ if .Site.Params.linkedinUsername }}<a href="https://linkedin.com/{{.Site.Params.linkedinUsername}}"><img src="/images/social/linkedin.svg" /></a>{{ end }}
-    {{ if .Site.Params.email }}<a href="mailto:{{.Site.Params.email}}"><img src="/images/social/mail.svg" /></a>{{ end }}
- </div>
 </div>

@@ -1,16 +1,27 @@
 :root {
   --font-family-heading: 'PT Sans', sans-serif;
   --font-family-paragraph: 'PT Sans', sans-serif;
-  --font-family-monospace: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  --base-color: #ffffff;
-  --base-offset-color: #eaeaea;
+  --font-family-monospace: 'JetBrains Mono', monospace;
   --highlight-color: {{ .Site.Params.highlightColor | default "#113CFC" }};
+  --base-color: #ffffff;
+  --page-heading-color: #292929;
   --heading-color: #1c1b1d;
   --text-color: #292929;
+  --tag-color: #666666;
   --font-default-size: 20px;
   --font-default-line-height: 32px;
-  --tag-color: #666666;
   --footer-item-size: 20px;
+  --padding-screen: 50px;
+  --padding-small-screen: 20px;
+}
+
+[data-theme="dark"] {
+  --highlight-color: #e3e5e7;
+  --base-color: #131418;
+  --page-heading-color: #e3e5e7;
+  --heading-color: #e3e5e7;
+  --text-color: #babdc4;
+  --tag-color: #8c8e93;
 }
 
 $breakpoints: (
@@ -26,12 +37,13 @@ $breakpoints: (
 @import 'content';
 @import 'intro';
 @import 'summary';
-@import 'author';
+@import 'info';
 @import 'tags';
 @import 'pagination';
 @import 'main-menu';
 @import 'main-menu-mobile';
 @import 'recent-posts';
+@import 'sun-moon';
 
 html, body {
   box-sizing: border-box;
@@ -44,18 +56,18 @@ body {
   line-height: var(--font-default-line-height);
   color: var(--text-color);
   margin: 0;
-  padding: 20px;
   overflow-x: hidden;
-  @include breakpoint('small') {
-    padding: 50px;
-  }
-  &.frame {
-    min-height: 100vh;
-    // border: 18px solid var(--highlight-color);
+  padding: var(--padding-small-screen);
+  @include breakpoint('small') { // if this and above
+    padding: var(--padding-screen);
   }
 }
 
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  padding-bottom: var(--padding-small-screen);
+  @include breakpoint('small') { // if this and above
+    padding-bottom: 0;
+  }
 }

@@ -41,6 +41,13 @@
   margin-right: 11px;
 }
 
+.page-image {
+  text-align: center;
+  img {
+    width: inherit !important;
+  }
+}
+
 .intro-header {
   font-size: 48px;
   line-height: 56px;
@@ -50,6 +57,7 @@
   }
   margin-bottom: 30px;
   .intro-text {
+    color: var(--page-heading-color);
     vertical-align: middle;
   }
   .dot {

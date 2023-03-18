@@ -1,0 +1,7 @@
+<div class="info">
+  <span class="details">
+    <span>{{ dateFormat "Jan 2, 2006" .Date }}</span>
+    <span class="divider">&#183;</span>
+    <span>{{ math.Round (div (countwords .Content) 220.0) }} min read</span>
+  </span>
+</div>

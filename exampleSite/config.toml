@@ -17,17 +17,12 @@ twitterHandle = "@shouryaps"
 twitterUsername = "shouryaps"
 linkedinUsername = "shouryaps"
 githubUsername = "shouryaps"
-email = "mail@shouryaps.com"
-
-ccLicenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
 
 introMD = "**Shourya's** Home on Internet"
 
 showPostsOnHomepage = true
 maxHomepagePosts = 2
-showAuthorNameOnPosts = false
 
-addFrame = true
 addDot = true
 
 highlightColor = '#113CFC'

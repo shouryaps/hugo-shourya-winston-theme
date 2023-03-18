@@ -29,3 +29,9 @@ cp -a themes/hugo-shouryaps-blog-theme/exampleSite/. .
 ```sh
 hugo new posts/my-first-post.md
 ```
+
+## Creating new pages
+Pages appear in the main menu. These can be created using following command:
+```sh
+hugo new pages/my-first-page.md
+```

@@ -1,0 +1,66 @@
+.sun-and-moon > :is(.moon, .sun, .sun-beams) {
+	transform-origin: center center;
+}
+
+.sun-and-moon > :is(.moon, .sun) {
+	fill: var(--tag-color);
+}
+
+.theme-toggle:is(:hover, :focus-visible) > .sun-and-moon > :is(.moon, .sun) {
+	fill: var(--text-color);
+}
+
+.sun-and-moon > .sun-beams {
+	stroke: var(--tag-color);
+	stroke-width: 2px;
+}
+
+.theme-toggle:is(:hover, :focus-visible) .sun-and-moon > .sun-beams {
+	stroke: var(--text-color);
+}
+
+[data-theme="dark"] .sun-and-moon > .sun {
+	transform: scale(1.75); // make inner circle large in dark theme
+}
+
+[data-theme="dark"] .sun-and-moon > .sun-beams {
+	opacity: 0; // remove the beams in dark theme
+	transform: rotate(-25deg);
+}
+
+[data-theme="dark"] .sun-and-moon > .moon > circle {
+	transform: translate(-7px); // make moon look crescent by adding mask
+}
+
+@media (prefers-reduced-motion: no-preference) { // user might be okay with animations
+	.sun-and-moon > .sun {
+		transition-duration: .25s; // time taken for scale transformation of inner circle
+	}
+	.sun-and-moon > .sun-beams {
+		transition: transform .5s ease-in-out; // rotate beams slowly
+	}
+	[data-theme=dark] .sun-and-moon > .moon > circle { // add cresent in moon slowly
+		transition-delay: .25s;
+		transition-duration: .25s
+	}
+}
+
+.theme-toggle {
+	background: none;
+	border: none;
+	padding: 0;
+	inline-size: var(--font-default-size);
+	block-size: var(--font-default-size);
+	aspect-ratio: 1;
+	border-radius: 50%;
+	cursor: pointer;
+	touch-action: manipulation;
+	-webkit-tap-highlight-color: transparent;
+	outline-offset: 5px;
+}
+
+.theme-toggle > svg {
+	inline-size: 100%;
+	block-size: 100%;
+	stroke-linecap: round;
+}
