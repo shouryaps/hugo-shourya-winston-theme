@@ -2,15 +2,24 @@
   --font-family-heading: 'PT Sans', sans-serif;
   --font-family-paragraph: 'PT Sans', sans-serif;
   --font-family-monospace: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  --base-color: #ffffff;
-  --base-offset-color: #eaeaea;
   --highlight-color: {{ .Site.Params.highlightColor | default "#113CFC" }};
+  --base-color: #ffffff;
+  --page-heading-color: #292929;
   --heading-color: #1c1b1d;
   --text-color: #292929;
+  --tag-color: #666666;
   --font-default-size: 20px;
   --font-default-line-height: 32px;
-  --tag-color: #666666;
   --footer-item-size: 20px;
+}
+
+[data-theme="dark"] {
+  --highlight-color: #e3e5e7;
+  --base-color: #131418;
+  --page-heading-color: #e3e5e7;
+  --heading-color: #e3e5e7;
+  --text-color: #babdc4;
+  --tag-color: #8c8e93;
 }
 
 $breakpoints: (
@@ -51,7 +60,6 @@ body {
   }
   &.frame {
     min-height: 100vh;
-    // border: 18px solid var(--highlight-color);
   }
 }
 

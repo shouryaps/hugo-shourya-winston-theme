@@ -10,3 +10,5 @@ if (menuTrigger !== null) {
     body.classList.toggle('lock-scroll');
   });
 }
+
+document.documentElement.setAttribute('data-theme', 'dark');
