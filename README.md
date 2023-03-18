@@ -1,6 +1,6 @@
 # hugo shouryaps blog theme
 
-This theme powers [shouryaps.com](https://shouryaps.com). Its forked from [Hugo Winston Theme](https://github.com/zerostaticthemes/hugo-winston-theme) by [Zerostatic](https://www.zerostatic.io/).  
+This theme powers [shouryaps.com](https://shouryaps.com). It is forked from [Hugo Winston Theme](https://github.com/zerostaticthemes/hugo-winston-theme) by [Zerostatic](https://www.zerostatic.io/).  
 
 ## Running and testing theme locally
 1. Change directory to `exampleSite`
