@@ -3,13 +3,14 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 100px;
-    color: var(--tag-color);
     line-height: var(--footer-item-size);
-    img {
+    color: var(--tag-color);
+    svg {
         width: var(--footer-item-size);
         height: var(--footer-item-size);
     }
     a {
+        color: var(--tag-color);
         opacity: 0.6;
         &:hover {
             opacity: 1;
