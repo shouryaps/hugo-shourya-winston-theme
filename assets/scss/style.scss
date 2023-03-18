@@ -11,6 +11,8 @@
   --font-default-size: 20px;
   --font-default-line-height: 32px;
   --footer-item-size: 20px;
+  --padding-screen: 50px;
+  --padding-small-screen: 20px;
 }
 
 [data-theme="dark"] {
@@ -54,10 +56,10 @@ body {
   line-height: var(--font-default-line-height);
   color: var(--text-color);
   margin: 0;
-  padding: 20px;
+  padding: var(--padding-small-screen);
   overflow-x: hidden;
-  @include breakpoint('small') {
-    padding: 50px;
+  @include breakpoint('small') { // min width check
+    padding: var(--padding-screen);
   }
 }
 
