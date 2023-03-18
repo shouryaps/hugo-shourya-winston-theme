@@ -27,7 +27,6 @@ showPostsOnHomepage = true
 maxHomepagePosts = 2
 showAuthorNameOnPosts = false
 
-addFrame = true
 addDot = true
 
 highlightColor = '#113CFC'
