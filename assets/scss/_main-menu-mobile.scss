@@ -49,6 +49,7 @@
       display: block;
       position: relative;
       opacity: 0;
+      padding-bottom: 20px;
       a {
         display: block;
         position: relative;
@@ -69,7 +70,7 @@
   height: 30px;
   display: flex;
   align-items: center;
-  @include breakpoint("medium") {
+  @include breakpoint("small") {
     display: none;
   }
 }
