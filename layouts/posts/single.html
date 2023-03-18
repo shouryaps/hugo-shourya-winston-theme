@@ -3,8 +3,7 @@
 
 {{ define "main" }}
   <div class="blog">
-    {{ .Scratch.Set "showShare" "yes"  }}
-    {{ partial "author.html" . }}
+    {{ partial "info.html" . }}
     <div class="intro">
       <h1 class="page-heading">{{ .Title }}{{ if .Site.Params.addDot }}<span class="dot">.</span>{{ end }}</h1>
       {{ if .Params.image }}

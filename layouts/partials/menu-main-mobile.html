@@ -2,24 +2,9 @@
     <ul class="menu">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
-            {{ if .HasChildren }}
-                <li class="menu-item-{{ .Name | lower }}{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}">
-                    <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-                    <div class="dropdown">
-                        <ul class="sub-menu">
-                            {{ range .Children }}
-                                <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                                    <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-                                </li>
-                            {{ end }}
-                        </ul>
-                    </div>
-                </li>
-            {{else}}
-                <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
-                    <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-                </li>
-            {{end}}
+            <li class="menu-item-{{ .Name | lower }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
+                <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+            </li>
         {{end}}
         <br />
         <li class="menu-item-switch-theme"><a href="#" id="theme-toggle-mobile">Switch to <span id="opp-theme"></span> theme</a></li>

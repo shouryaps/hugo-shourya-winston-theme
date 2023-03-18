@@ -1,6 +1,5 @@
 <div class="summary">
-    {{ .Scratch.Set "showShare" "no"  }}
-    {{ partial "author.html" . }}
+  {{ partial "info.html" . }}
   <h2 class="summary-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
   {{ partial "tags.html" . }}
   <p class="summary-description">{{ .Params.description }}</p>
