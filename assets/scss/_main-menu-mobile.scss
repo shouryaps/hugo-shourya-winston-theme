@@ -1,6 +1,6 @@
 .menu-main-mobile {
   position: fixed;
-  background: var(--highlight-color);
+  background: var(--base-color);
   top: 0;
   left: 0;
   width: 100%;
@@ -53,7 +53,6 @@
       a {
         display: block;
         position: relative;
-        color: var(--base-color);
         text-decoration: none;
         &:hover {
           opacity: 0.7;
@@ -110,7 +109,6 @@
     right: var(--padding-small-screen);
     border-color: transparent;
     z-index: 100;
-    color: var(--base-color);
     &:hover {
       opacity: 1;
     }
